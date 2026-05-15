@@ -1,4 +1,4 @@
-#include "hv_defeat.h"
+#include "hv_defeat_0304.h"
 #include "config.h"
 #include "gpu.h"
 #include "iommu.h"
@@ -13,7 +13,7 @@
 
 uint64_t vmcb_pa[16];
 
-int hv_defeat(void) {
+int hv_defeat_0304(void) {
   if (gpu_init())
     return -1;
   if (stage1_tmr_relax())

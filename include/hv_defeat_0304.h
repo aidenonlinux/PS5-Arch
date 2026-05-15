@@ -1,10 +1,10 @@
-#ifndef HV_DEFEAT_H
-#define HV_DEFEAT_H
+#ifndef HV_DEFEAT_0304_H
+#define HV_DEFEAT_0304_H
 
 #include "iommu.h"
 #include <stdint.h>
 
-int hv_defeat(void);
+int hv_defeat_0304(void);
 int stage1_tmr_relax(void);
 int stage2_find_vmcbs(void);
 uint64_t get_vmcb(int core);

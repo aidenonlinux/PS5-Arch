@@ -1,4 +1,4 @@
-#include "hv_defeat.h"
+#include "hv_defeat_0304.h"
 #include "loader.h"
 #include "prepare_resume.h"
 #include "utils.h"
@@ -10,7 +10,7 @@ int main(void) {
            "is supported.");
     return -1;
   }
-  if (hv_defeat()) {
+  if (hv_defeat_0304()) {
     notify("Something went wrong while defeating Hypervisor.\nPlease make sure "
            "your fw is supported.");
     return -1;
