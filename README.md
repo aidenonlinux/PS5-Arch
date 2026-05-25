@@ -1,6 +1,13 @@
 # ps5-linux
 
-**ps5-linux** leverages a patched HV vulnerabilities to transform your PS5 Phat console running **3.00-6.02 firmwares** into a highly capable Linux PC, unlocking its full hardware potential for desktop use. Powered by 8 CPU cores (16 threads) at **3.5 GHz** and a GPU at **2.23 GHz**, it provides enough performance to run Steam games and various emulators with impressive fluidity. It supports HDMI 4K60 video and audio output. Furthermore, it allows you to utilize an **M.2 SSD** as a dedicated Linux partition, as well as all USB ports on the console.
+**ps5-linux** leverages a patched HV vulnerabilities to transform your PS5 Phat console running **3.00-6.02 firmwares** into a highly capable Linux PC, unlocking its full hardware potential for desktop use. Powered by 8 CPU cores (16 threads) at **3.5 GHz** and a GPU at **2.23 GHz**, it provides enough performance to run Steam games and various emulators with impressive fluidity.
+
+Features:
+
+- HDMI 4K60 video and audio output
+- M.2 SSD as dedicated Linux partition
+- All USB ports usable for peripherals
+- Ethernet port usable via custom Gigabit Ethernet driver
 
 ![Alt Text](logo.webp)
 
@@ -22,8 +29,8 @@ If you want to update to a specific firmware, [download the correct PUP](https:/
 To run *ps5-linux*, you need some required and optional hardwares:
 
 - **Required**: USB drive with minimum 64GB (ideally external SSD) to install and run Linux.
-- **Required**: USB Ethernet/WLAN adapter for internet access.
 - **Required**: USB keyboard/mouse (dongles supported too).
+- *Optional*: USB WLAN adapter for WLAN internet access.
 - *Optional*: M.2 SSD compatible on PS5 (see [official guide](https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd)) to run Linux from SSD.
 - *Optional*: Bluetooth dongle to connect with PS5 DualSense controller.
 
@@ -188,7 +195,7 @@ Then, there are certain settings and commands we recommend doing:
    make
    ```
 
-7. Install the mwifiex driver for the internal WLAN chip:
+7. Install the mwifiex driver for the internal Marvell WLAN chip (`40:00.7 Ethernet controller [0200]: Marvell Technology Group Ltd. Device [1b4b:2b56] (rev 02)`):
 
    ```bash
    git clone https://github.com/ps5-linux/ps5-linux-mwifiex
@@ -302,6 +309,7 @@ Join our [Discord server](https://discord.gg/PeMGVB7BAm) to celebrate Linux on P
 - [theflow](https://github.com/TheOfficialFloW): [ps5-linux-loader](https://github.com/ps5-linux/ps5-linux-loader), [ps5-linux-patches](https://github.com/ps5-linux/ps5-linux-patches), [ps5-linux-tools](https://github.com/ps5-linux/ps5-linux-tools)
 - [c0w](https://github.com/c0w-ar): [ps5-linux-loader](https://github.com/ps5-linux/ps5-linux-loader)
 - [resulknad](https://github.com/resulknad): [ps5-linux-image](https://github.com/ps5-linux/ps5-linux-image)
+- [rmuxnet](https://github.com/rmuxnet): [ps5 ethernet driver](https://github.com/ps5-linux/ps5-linux-patches/commit/643e214d7bd37f292045fc0dbb821e421f7a3e47)
 - [fail0verflow](https://github.com/fail0verflow): [prosperous](https://github.com/fail0verflow/prosperous)
 - [flatz](github.com/flatz): [HV exploit](https://gist.github.com/flatz/620ddda6d64acca6d1c990dc3080ac0e)
 - [cragson](https://github.com/cragson): [HV expoit implementation](https://github.com/cragson/ps5-hen)
