@@ -7,7 +7,9 @@ Features:
 - HDMI 4K60 video and audio output
 - M.2 SSD as dedicated Linux partition
 - All USB ports usable for peripherals
-- Ethernet port usable via custom Gigabit Ethernet driver
+- BD drive usable via custom ahci driver
+- Internal Bluetooth usable via custom xhci driver
+- Ethernet port usable via custom gbe driver
 
 ![Alt Text](logo.webp)
 
@@ -269,9 +271,9 @@ For any future ps5-linux updates, you can download the `.deb` or `.pkg.tar.zst` 
 - Q: Can I continue using my PS5 if I install Linux?
   - A: Yes, the internal SSD is not modified
 - Q: Can I use the PS5's NIC/WLAN module in Linux?
-  - A: In theory yes, but someone needs to write or adapt drivers to use them.
+  - A: WLAN is only supported for Marvell chipsets at the moment. Ethernet is supported on all models.
 - Q: Does the DualSense controller work?
-  - A: Via a Bluetooth dongle. Built-in Bluetooth is not yet supported.
+  - A: Yes, via internal Bluetooth as well as Bluetooth dongle.
 - Q: What resolutions and refresh rates are supported?
   - A: 1080p, 1440p and 2160p at 60Hz are broadly supported. 1440p@120Hz has been the only confirmed working on the DELL S3225QC yet. 120Hz or 30Hz may be added in the future.
 - Q: After reboot, I get a "Repairing" screen and "Your PS5 wasn't turned off properly." screen. Is that normal?
