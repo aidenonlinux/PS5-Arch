@@ -321,4 +321,4 @@ Join the discord server from the original devs: [Discord server](https://discord
 - [echostretch](https://github.com/echostretch): Offsets and testing
 - [kirathenotebook](https://github.com/kirathenotebook): Betatesting and readme contribution
 - 15432: Tests on BC-250
-- [aidenonlinux / akalord] (https://github.com/aidenonlinux): forking this :)
+- [aidenonlinux / akalord](https://github.com/aidenonlinux): forking this :)
