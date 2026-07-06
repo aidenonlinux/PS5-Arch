@@ -57,7 +57,7 @@ If you reset your PS5 settings or reinstall the FW, you need to reapply these se
 
 #### Pre-built images
 
-You can download them from [i use ps5 linux btw-image](https://github.com/i use ps5 linux btw/i use ps5 linux btw-image/releases/tag/latest). Recommended is `ps5-ubuntu2604.img.xz`. Unpack the `.xz` file.
+You can download them from [i use ps5 linux btw-image](https://github.com/ps5-linux/ps5-linux-image/releases/tag/latest). Recommended is `ps5-ubuntu2604.img.xz`. Unpack the `.xz` file.
 
 #### Build your own image
 
